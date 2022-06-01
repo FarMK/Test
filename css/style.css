@@ -1,0 +1,185 @@
+/*Обнуление*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+
+/*--------------------*/
+
+.block {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid green;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+.text ul {
+    width: 100%;
+}
+
+.text ul li {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.text button {
+    padding: 5px;
+    font-size: 14px;
+}
+
+input {
+    border: 1px solid gray;
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px;
+    border: 1px dotted gray;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.love {
+    display: flex;
+    align-items: center;
+}
+
+.question {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+@media(max-width: 786px) {
+    .block {
+        width: 100%;
+    }
+    .text {
+        width: 100%;
+        margin-left: 10px;
+        padding: 50px;
+    }
+    .text ul li {
+        margin-top: 25px;
+    }
+}
